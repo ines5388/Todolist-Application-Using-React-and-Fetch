@@ -25,6 +25,47 @@ p {
     margin: 0 auto;
 }
 
+input {
+    border: none;
+    width: 100%;
+    padding: 10px 50px;
+    border-bottom: 1px solid lightgrey;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    list-style: none;
+    padding: 10px 15px 10px 50px;
+    border-bottom: 1px solid lightgrey;
+    color: grey;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icono {
+    color: red;
+    visibility: hidden;
+    cursor:pointer;
+}
+
+.contador {
+    padding: 5px 15px;
+    color: rgb(213, 216, 215);
+ }
+
+.agregarTarea {
+    color: lightgrey;
+}
+
+li:hover .icono {
+   visibility: visible;
+}
+
 .tarjeta2 {
     position: relative;
     z-index: 2;
@@ -48,43 +89,3 @@ p {
     box-shadow: 0px 13px 20px 0px lightgray;
 }
 
-input {
-    border: none;
-    width: 100%;
-    padding: 10px 50px;
-    border-bottom: 1px solid lightgrey;
-}
-
-ul li {
-    list-style: none;
-    padding: 10px 15px 10px 50px;
-    border-bottom: 1px solid lightgrey;
-    color: grey;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-ul {
-    padding: 0;
-    margin: 0;
-}
-
-.contador {
-   padding: 5px 15px;
-   color: rgb(213, 216, 215);
-}
-
-
-.icono {
-    color: red;
-    visibility: hidden;
-}
-
-.hover {
-    visibility: visible;
-}
-
-.agregarTarea {
-    color: lightgrey;
-}
