@@ -84,7 +84,7 @@ const TodoList = () => {
 	return (
 		<div className="principal">
 			<p className="fw-lighter">todos</p>
-			<div className="card">
+			<div className="card1">
 				<input type="text" placeholder="What needs to be done?" onChange={(event) => setTask(event.target.value)} onKeyDown={addTask} value={task} />
 				<ul>
 					{allTasks.length === 0 ? (<li className="add-task">No hay tareas, añadir tareas</li>)
