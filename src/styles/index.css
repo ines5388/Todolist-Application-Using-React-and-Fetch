@@ -62,7 +62,7 @@ ul li {
     color: lightgrey;
 }
 
-li:hover .icono {
+li:hover .icon-x {
    visibility: visible;
 }
 
