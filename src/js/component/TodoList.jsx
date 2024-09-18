@@ -84,17 +84,17 @@ const TodoList = () => {
 	return (
 		<div className="principal">
 			<p className="fw-lighter">todos</p>
-			<div className="tarjeta">
+			<div className="card">
 				<input type="text" placeholder="What needs to be done?" onChange={(event) => setTask(event.target.value)} onKeyDown={addTask} value={task} />
 				<ul>
-					{allTasks.length === 0 ? (<li className="agregarTarea">No hay tareas, añadir tareas</li>)
-					: allTasks.map((elem,index) => <li key={index}>{elem.label}<i className="icono" onClick={() => deleteTask(elem.id)}>X</i></li>)}
+					{allTasks.length === 0 ? (<li className="add-task">No hay tareas, añadir tareas</li>)
+					: allTasks.map((elem,index) => <li key={index}>{elem.label}<i className="icon-x" onClick={() => deleteTask(elem.id)}>X</i></li>)}
 				</ul>
-				<div className="contador">{allTasks.length} item left</div>
+				<div className="counter">{allTasks.length} item left</div>
 				<button className="btn btn-danger m-2" onClick={cleanAllTasks}>Clean All Tasks</button>
 			</div>
-			<div className="tarjeta2"></div>
-            <div className="tarjeta3"></div>
+			<div className="card2"></div>
+            <div className="card3"></div>
 		</div>
 	);
 };
